@@ -5,7 +5,7 @@
 
 header {
   font-family: sans-serif;
-  background-color: #232f3e;
+  background-color: #D8BFD8;
   padding: 0 1rem;
   padding-right: 0;
 }
@@ -26,8 +26,8 @@ header a {
   font-size: 1.25rem;
 }
 header a:hover {
-  background-color: rgb(255, 191, 0);
-  color: #232f3e;
+  background-color: rgb(233, 179, 221);
+  color: white;
 }
 header nav {
   max-width: 1350px;
@@ -73,7 +73,7 @@ main .card img {
 main .card .info {
   width: fit-content;
   color: rgb(255, 255, 255);
-  background: rgb(204, 12, 57);
+  background-color: rgb(233, 179, 221);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   margin-bottom: 1rem;
