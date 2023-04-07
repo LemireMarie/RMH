@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entering Data</title>
+    <link rel="stylesheet" href="./interface.css">
+</head>
+<body>
+    <form action="./scriptRMH.php" method="POST">
+        <label for="product_name"> produit</label>
+        <input type="text" name="productName" placeholder="Enter the name of the product" id="product_name">
+        <label for="skin_type">Type de peau </label>
+        <input type="text" name="skinType" placeholder="Enter your skin type" id="skin_type">
+        <label for="product_type">produit type</label>
+        <input type="text" name="productType" placeholder="the product type" id="product_type" >
+        <label for="photo">image</label>
+        <input type="url" name="image" id="photo" placeholder="Enter the like of the image ">
+        <label for="charac">Characteristics</label>
+        <input type="text" name="characteristics" id="charac" placeholder="Enter the product's characteristics">
+        <label for="prix">prix</label>
+        <input type="number" name="price" id="prix" placeholder="Enter the product price">
+        <button>SEND</button>
+    </form>
+</body>
+</html>
