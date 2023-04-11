@@ -14,6 +14,14 @@
                         $results = $exe->fetchAll(PDO::FETCH_ASSOC);
                             foreach($results as $row){
                             ?>
+                             <form action="./delete.php" method="POST">
+                                    <input type="hidden" name = "id" value= "<?= $row['id']; ?>">
+                                    <button type="submit">X</button>
+                                </form>
+                                <form action="./update.php" method="POST">
+                                    <input type="hidden" name = "id" value= "<?= $row['id']; ?>">
+                                    <button type="submit">update</button>
+                                </form>
                                 <div class="card">
                                     <img src="<?= $row['img'] ?>" alt="illustration de <?= $row['productName']; ?>">
                                     
@@ -23,6 +31,7 @@
                                     <p class="product"><?= $row['productType']; ?></p>
                                     <p class="charac"><?= $row['characteristics']; ?></p>
                                 </div>
+                               
                             <?php                       
                             }      
                     }
@@ -36,4 +45,4 @@
                 ?>
        </div>
 </main>
-    <?php require ("./footer.php"); ?>
+    
